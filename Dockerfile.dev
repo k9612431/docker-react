@@ -1,15 +1,12 @@
 from node:alpine
 
-user node
 
-run mkdir -p /home/node/app
- 
-workdir /home/node/app
+workdir /app
 
-copy --chown=node:node ./package.json ./
+copy package.json .
 
 run npm install
 
-copy --chown=node:node ./ ./
+copy . .
 
 cmd ["npm","run","start"]
