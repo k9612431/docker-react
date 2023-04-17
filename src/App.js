@@ -9,7 +9,9 @@ function App() {
         <p>
           Szia Katus! Ez egy docker - react - git - travis - aws demo.
         </p>
-        
+        <p>
+          A feature branch-ben vagyunk.
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
